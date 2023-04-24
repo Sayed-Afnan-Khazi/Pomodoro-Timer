@@ -82,7 +82,7 @@ function startTimer(){
 	    viewButton(resetButton);
 	    // Introducing the pause button
 	    pauseButton.classList.remove("hidden");
-	    timer = setInterval(startCountdown, 100);
+	    timer = setInterval(startCountdown, 1000);
 	}
 }
 
@@ -105,7 +105,7 @@ function resumeTimer() {
 	// Note: We can't use startTimer() here since it will reset the timer
 	if (!isRunning) {
 	    isRunning = true;
-	    timer = setInterval(startCountdown, 100);
+	    timer = setInterval(startCountdown, 1000);
 	}
 }
 
