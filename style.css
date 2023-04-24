@@ -1,0 +1,95 @@
+.hidden {
+	visibility: hidden;
+}
+
+.container {
+	display: grid;
+	justify-items: center;
+}
+
+#title {
+	text-decoration: underline ;
+	text-decoration-thickness: 20px;
+	height: 100%;
+	font-size: 8vh;
+}
+
+#input-div {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#input-time {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 25px;
+	font-size: 4vh;
+	font-weight: bold;
+	width: 15%;
+/*	height: 50%;*/
+}
+
+
+p {
+	font-weight: bold;
+	font-size: 4vh;
+}
+
+#timer {
+	font-size: 20vh;
+	height: 1em;
+	margin: 0.1em;
+	border-bottom: 20px solid black;
+	padding: 0px 5px 0px 5px;
+}
+
+button {
+	height: 2.3em;
+  width: 5em;
+  padding: 0px;
+  font-size: 1.3em;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #title {
+  	font-size: 6vh;
+  	text-decoration-thickness: 15px;
+  }
+  #timer {
+  	font-size: 15vh;
+  }
+  p {
+		font-size: 3vh;
+	}
+	#input-time {
+		font-size: 3vh;
+	}
+	button {
+		width: 3em;
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+  #title {
+  	font-size: 4vh;
+  	text-decoration-thickness: 10px;
+  }
+  #timer {
+  	font-size: 10vh;
+  }
+  p {
+	font-size: 2vh;
+	}
+	#input-time {
+		font-size: 2vh;
+	}
+}
+
